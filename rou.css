@@ -1,0 +1,352 @@
+body{
+    margin: 0px;
+}
+
+
+
+#body-header{
+    background-image: url(./mac.webp);
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.row{
+    list-style: none;
+    padding-left: 0px;
+   margin: 0px;
+   padding-top: 20px;
+}
+
+.row li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    padding: 8px;
+}
+
+.row li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+
+.nav li a:hover{
+    color: rgb(122, 94, 94);
+    border-bottom: 2px solid rgb(138, 107, 107);
+    transition: 0.2s;
+
+   
+}
+
+h1{
+    font-size: 40px;
+    opacity: 0.9;
+    padding-top: 120px;
+    padding-bottom: 0px;
+}
+
+.icons li a i{
+    padding: 10px;
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 20%;
+  
+}
+
+
+.icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px white;
+    color: white;
+
+    transition: 0.9s;
+    /* -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    display: inline-block; */
+}
+
+.para{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: larger;
+    font-style: italic;
+    font-display: bold;
+ 
+}
+
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(2n)
+{
+   
+    background-color: rgba(199, 199, 195,1);
+}
+
+section:nth-child(2n+1)
+{
+    background-color: white;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+
+.skill-display{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+
+.progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: blue;
+}
+
+.mb-yellow{
+    background-color: yellow;
+}
+
+.mb-orange{
+    background-color: orange;
+}
+
+.mb-aqua{
+    background-color: aqua;
+}
+
+.mb-pink{
+    background-color: pink;
+}
+
+.mb-brown{
+    background-color: brown;
+}
+
+.mb-gold{
+    background-color: gold;
+}
+
+.eighty{
+    width: 85%;
+    height: inherit;
+}
+
+.sname{
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* work experience */
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: solid 2px black; */
+
+}
+
+.timebox{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: solid 2px gray;
+    border-radius: 5%;
+    display: flex;
+    box-shadow: 0px 0px 6px 4px gray;
+    flex-wrap: wrap;
+   margin-bottom: 40px;
+}
+
+
+.timebox:nth-child(2n){
+    left: 53%;
+}
+
+.timedivider{
+    position: absolute;
+    height: 53%;
+    width: 0;
+    border: 3px dashed  grey;
+    top: 10%;
+    left: 50%;
+/* margin-top: 1000px; */
+}
+
+.timetraveller{
+    transform: rotate(90deg);
+    font-size: 25px;
+    position: sticky;
+    top: 25%;
+}
+
+
+.timebox:nth-child(2n+1):after{
+    content: '';
+    position: absolute;
+    top: 19%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    right: -14%;
+}
+
+.timebox:nth-child(2n):after{
+    content: '';
+    position: absolute;
+    top: 12%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    left: -8%;
+}
+
+img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    margin-top: 9px;
+}
+
+
+  
+
+
+
+.timebox #text{
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+
+/* portfolio */
+
+.cards{
+    width: auto;
+    height: auto;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: solid 2px black; */
+    margin-bottom: 40px;
+}
+
+/* .cards div{
+    border: solid 4px black;
+} */
+
+.cards div img{
+    height: 150px;
+    width: 200px;
+}
+
+.cards div a{
+    text-decoration: none;
+    color: black;
+ 
+}
+
+.cards div p{
+  
+  margin-top:9px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.cards div:hover{
+    box-shadow: 0px 0px 6px 4px grey;
+    
+}
+
+
+/* links */
+
+
+.platform {
+    width: auto;
+    height: auto;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    margin-bottom: 40px;
+}
+
+.platform div{
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.platform div:hover{
+    box-shadow: 0px 0px 6px 4px black;
+    transform: rotate(360deg);
+    transition: 0.9s;
+}
+
+
+/* 
+footer */
+
+#footer{
+    background-color: #333;
+    color: aliceblue;
+}
+
