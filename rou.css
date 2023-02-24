@@ -81,9 +81,10 @@ nav .mainmenu .closemenu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #333;
+        background-color:  rgba(199, 199, 195,1);
         transition: top 1s ease;
         display: none;
+      
     }
 
     nav .mainmenu .closemenu{
@@ -98,6 +99,8 @@ nav .mainmenu .closemenu{
         display: block;
         padding-top: 10px;
     }
+   
+
 }
 
 
