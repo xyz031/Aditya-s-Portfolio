@@ -1,26 +1,50 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    vector<int>v,ans,h,x;
-for (int i = 0; i < v.size(); i++)
-{
-    if (v[i]>0)
+#define ll long long
+#define endl "\n"
+
+
+
+int main(){
+    ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+    ll t;
+    cin>>t;
+    while(t--){
+          ll n,k;
+           cin>>n>>k;
+    ll tot=(n+1);
+    if((1-n)<=k and k<=(n+1))
     {
-        ans.push_back(v[i]);
+        if(k==0){
+            ll m=(n-1);
+            while(m--){ cout<<"*";}
+            cout<<"-"<<endl;
+          
+        }
+       else if(k<0){
+            ll s=abs(k)+1;
+            ll m=n-s;
+            while(s--){ cout<<"-";}
+            while(m--){ cout<<"*";}
+            cout<<endl;
+          
+        }
+        
+        
+       else if(k>0){
+            ll p=abs(k)-1;
+            ll m=n-p;
+            while(p--) {cout<<"+";}
+            while(m--) {cout<<"*";}
+            cout<<endl;
+          
+        }
+        
+        
     }
     else
-    {
-        h.push_back(v[i]);
+    {cout<<-1<<endl;}
     }
-    
-}
-
-for (int i = 0; i < h.size(); i++)
-{
-    x.push_back(ans[i]);
-     x.push_back(h[i]);
-}
-return x;
+    return 0;
 }

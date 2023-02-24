@@ -13,6 +13,7 @@ body{
 }
 
 
+
 .row{
     list-style: none;
     padding-left: 0px;
@@ -51,6 +52,57 @@ body{
   
    
 }
+
+
+nav .openmenu{
+    font-size: 2rem;
+    margin-left: 20px;
+  
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainmenu .closemenu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media(max-width: 800px){
+    nav ul{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openmenu{
+        display: block;
+        padding-top: 10px;
+    }
+}
+
+
+
+
 
 h1{
     font-size: 40px;
@@ -360,7 +412,7 @@ img{
    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   
     margin-bottom: 40px;
 }
