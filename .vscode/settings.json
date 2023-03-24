@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "*.tcc": "cpp",
         "list": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }

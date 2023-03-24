@@ -5,11 +5,12 @@ body{
 
 
 #body-header{
-    background-image: url(./images/mac.webp);
+    background-image: url(./images/wall.jpg);
     height: 65vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 
 
@@ -46,8 +47,8 @@ body{
 
 
 .nav li a:hover{
-    color: rgb(122, 94, 94);
-    border-bottom: 2px solid rgb(138, 107, 107);
+    color: white;
+    border-bottom: 2px solid white;
     transition: 0.2s;
   
    
@@ -81,7 +82,7 @@ nav .mainmenu .closemenu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:  rgba(199, 199, 195,1);
+        background-color:  #c9cdd8;
         transition: top 1s ease;
         display: none;
       
@@ -112,6 +113,7 @@ h1{
     opacity: 0.9;
     padding-top: 120px;
     padding-bottom: 0px;
+    font-family: sans-serif;
 }
 
 .icons li a i{
@@ -154,7 +156,7 @@ section{
 section:nth-child(2n)
 {
    
-    background-color: rgba(199, 199, 195,1);
+    background-color:#c9cdd8;
 }
 
 section:nth-child(2n+1)
@@ -166,42 +168,42 @@ section:nth-child(2n+1)
     height: auto;
     width: 100%;
     position: relative;
+    font-family: sans-serif;
 }
 
-.section-heading{
-    width: auto;
-    padding: 20px 10px 10px;
-    margin: 10px auto;
-    font-weight: 400;
-}
-
-
-.skill-display{
-    width: auto;
-    height: auto;
-
+.skills-display
+{
+    width: 70%;
+     padding: 10px; 
+     margin-bottom: 30px; 
+    /* height: 100px; */
+    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   
 }
 
-
-.progress{
+.skill-progress
+{
     width: 7rem;
     height: 1.4rem;
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 0.8rem;
-    border: 2px solid black;
-    margin: 10px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden; 
 }
-
-.progress>div{
+.skill-progress>div{
     border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882; 
 }
+.skill-name span{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    vertical-align: middle;
 
+}
 
 
 
@@ -237,11 +239,25 @@ section:nth-child(2n+1)
     background-color: gold;
 }
 
-.eighty{
+.eighty-five-percent{
     width: 85%;
     height: inherit;
 }
 
+.Seventy{
+    width: 70%;
+    height: inherit;
+}
+
+.eighty{
+    width: 80%;
+    height: inherit;
+}
+
+.fourty{
+    width: 40%;
+    height: inherit;
+}
 .sname{
     color: white;
     font-size: 1rem;
@@ -279,10 +295,10 @@ section:nth-child(2n+1)
 
 .timedivider{
     position: absolute;
-    height: 49%;
+    height: 65%;
     width: 0;
     border: 3px dashed  grey;
-    top: 13%;
+    top: 9%;
     left: 50%;
 /* margin-top: 1000px; */
 }
@@ -298,19 +314,20 @@ section:nth-child(2n+1)
         width: 80%;
     }
     .timebox:nth-child(2n+1)::after{
-        left: -13%;
+        left: -12.8%;
     }
     .timebox:nth-child(2n)::after{
-        left: -13% !important;
+        left: -12.8% !important;
     }
 }
 
 
 .timetraveller{
     transform: rotate(90deg);
-    font-size: 25px;
+    font-size: 26px;
     position: sticky;
-    top: 25%;
+    top: 25%; 
+  
 }
 
 
@@ -322,7 +339,7 @@ section:nth-child(2n+1)
     width: 0.5rem;
     height: 0.5rem;
     background-color: grey;
-    right: -14%;
+    right: -13.57%;
 }
 
 .timebox:nth-child(2n):after{
@@ -354,6 +371,7 @@ img{
    margin-left: 10px;
    padding-right: 5%;
    padding-bottom: 5%;
+   font-family: sans-serif;
 }
 
 
@@ -388,7 +406,7 @@ img{
 .cards div a{
     text-decoration: none;
     color: black;
- 
+    font-family: sans-serif;
 }
 
 .cards div p{
@@ -439,5 +457,6 @@ footer */
 #footer{
     background-color: #333;
     color: aliceblue;
+    font-family: sans-serif;
 }
 
